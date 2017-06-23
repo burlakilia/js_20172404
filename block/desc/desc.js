@@ -1,5 +1,4 @@
-(function () {
-
+(function() {
     let template = `
            <table class="desc">
                 <tr>
@@ -82,11 +81,10 @@
                     <td class="desc__cell desc__cell"></td>
                     <td class="desc__cell desc__cell"></td>
                 </tr>
-            </table> 
+            </table>
     `;
 
     class Desc {
-
         constructor(node) {
             this.node = node;
             this.render();
@@ -100,6 +98,8 @@
         onClick(event) {
             let target = event.target;
 
+            if (target.tagName != 'TD') return;
+
             if (this.current) {
                 this.current.classList.toggle('desc__cell_active', false);
             }
@@ -107,7 +107,6 @@
             target.classList.toggle('desc__cell_active');
             this.current = target;
         }
-
     }
 
     window.Desc = Desc;
