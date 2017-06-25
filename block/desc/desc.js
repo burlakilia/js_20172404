@@ -9,78 +9,78 @@
                     <td class="desc__cell"></td>
                     <td class="desc__cell"></td>
                     <td class="desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
                 <tr>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
-                    <td class="desc__cell desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
+                    <td class="desc__cell"></td>
                 </tr>
             </table> 
     `;
