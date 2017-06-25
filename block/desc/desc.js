@@ -1,89 +1,14 @@
+'use strict';
 (function () {
 
-    let template = `
-           <table class="desc">
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-                <tr>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                    <td class="desc__cell"></td>
-                </tr>
-            </table> 
-    `;
+    let template = '<table class="desc"><tr>';
+    for (let i=0; i<8; i++){
+        for (let j = 0; j<8; j++){
+            template += '<td class="desc__cell"></td>';
+        }
+        template += '</tr><tr>';
+    }
+    template += '</tr></table>';
 
     class Desc {
 
