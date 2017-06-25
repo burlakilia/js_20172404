@@ -100,6 +100,8 @@
         onClick(event) {
             let target = event.target;
 
+            if(target.tagName != 'TD') return;
+
             if (this.current) {
                 this.current.classList.toggle('desc__cell_active', false);
             }
