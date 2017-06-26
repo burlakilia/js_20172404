@@ -9,7 +9,7 @@
         }
 
         render() {
-            this.node.innerHTML = this.getTemplate(8);
+            this.node.innerHTML = this.setTemplate(8);
         }
 
         onClick(event) {
@@ -25,13 +25,13 @@
             }
         }
 
-        getTemplate($_size) {
+        setTemplate(_size) {
 
             let row = ``;
 
-            for (let i = 0; i < $_size; i++) {
+            for (let i = 0; i < _size; i++) {
                 let cell = ``;
-                for (let j = 0; j < $_size; j++) {
+                for (let j = 0; j < _size; j++) {
                     cell += `\t<td class="desc__cell desc__cell"></td>\n`;
                 }
                 row += `<tr>\n${cell}</tr>\n`;
