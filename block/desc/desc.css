@@ -1,4 +1,10 @@
+.js-desc {
+    margin-top: 50px;
+}
+
 .desc {
+    border-spacing: 0;
+    margin: 0 auto;
 }
 
 .desc__cell {
