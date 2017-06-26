@@ -1,0 +1,19 @@
+{
+  "name": "js_20172404",
+  "version": "0.1.0",
+  "description": "Студ проект",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burlakilia/js_20172404.git"
+  },
+  "author": "Burlak Ilia <i.burlak@javascript.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burlakilia/js_20172404/issues"
+  },
+  "homepage": "https://github.com/burlakilia/js_20172404#readme"
+}
