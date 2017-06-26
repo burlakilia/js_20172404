@@ -15,7 +15,7 @@
         onClick(event) {
             let target = event.target;
 
-            if (target.clientWidth == 51) {
+            if ( target.classList.contains('desc__cell') ) {
                 if (this.current) {
                     this.current.classList.toggle('desc__cell_active', false);
                 }
@@ -27,15 +27,13 @@
 
         getTemplate($_size) {
 
-            let cell = ``, row = ``;
-
-
-            for (let i = 0; i < $_size; i++) {
-                cell += `\t<td class="desc__cell desc__cell"></td>\n`;
-            }
-
+            let row = ``;
 
             for (let i = 0; i < $_size; i++) {
+                let cell = ``;
+                for (let j = 0; j < $_size; j++) {
+                    cell += `\t<td class="desc__cell desc__cell"></td>\n`;
+                }
                 row += `<tr>\n${cell}</tr>\n`;
             }
 
