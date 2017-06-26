@@ -1,15 +1,4 @@
-let table = document.createElement('table');
-table.className = 'desc';
-
-for(let i=0; i<8; i++){
-    let tr = document.createElement('tr');
-    for(let r=0; r<8; r++){
-        let td = document.createElement('td');
-        td.className = 'desc__cell';
-        tr.appendChild(td)
-    }
-    table.appendChild(tr)
-}
+import template from './desc.pug';
 
 export default class Desc {
 
@@ -20,7 +9,11 @@ export default class Desc {
     }
 
     render() {
-        this.node.appendChild(table);
+        this.node.innerHTML = template({
+            title: 'Привет',
+            rows: [8, 7, 6, 5, 4, 3, 2, 1],
+            cells: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+        });
     }
 
     onClick(event) {
