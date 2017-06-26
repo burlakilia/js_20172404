@@ -1,10 +1,6 @@
-(function () {
+import Desc from '../desc/desc.js';
 
-    window.addEventListener('DOMContentLoaded', () => {
-        let Desc = window.Desc;
+window.addEventListener('DOMContentLoaded', () => {
+    let desc = new Desc(document.querySelector('.js-desc'));
+});
 
-        let desc = new Desc(document.querySelector('.js-desc'));
-    });
-
-
-})();
