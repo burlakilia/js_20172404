@@ -1,44 +1,33 @@
-(function () {
+import template from './desc.pug';
 
-    let table = document.createElement('table');
-    table.className = 'desc';
+export default class Desc {
 
-    for(let i=0; i<8; i++){
-        let tr = document.createElement('tr');
-        for(let r=0; r<8; r++){
-            let td = document.createElement('td');
-            td.className = 'desc__cell';
-            tr.appendChild(td)
-        }
-        table.appendChild(tr)
+    constructor(node) {
+        this.node = node;
+        this.render();
+        this.node.addEventListener('click', event => this.onClick(event));
     }
 
-    class Desc {
-
-        constructor(node) {
-            this.node = node;
-            this.render();
-            this.node.addEventListener('click', event => this.onClick(event));
-        }
-
-        render() {
-            this.node.appendChild(table);
-        }
-
-        onClick(event) {
-            let target = event.target;
-            if (target.tagName !== 'TD') {
-                return;
-            }
-            if (this.current) {
-                this.current.classList.toggle('desc__cell_active', false);
-            }
-
-            target.classList.toggle('desc__cell_active');
-            this.current = target;
-        }
-
+    render() {
+        this.node.innerHTML = template({
+            title: 'Привет',
+            rows: [8, 7, 6, 5, 4, 3, 2, 1],
+            cells: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+        });
     }
 
-    window.Desc = Desc;
-})();
+    onClick(event) {
+        let target = event.target;
+        if (target.tagName !== 'TD') {
+            return;
+        }
+        if (this.current) {
+            this.current.classList.toggle('desc__cell_active', false);
+        }
+
+        target.classList.toggle('desc__cell_active');
+        this.current = target;
+    }
+
+}
+
