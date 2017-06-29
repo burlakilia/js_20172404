@@ -1,6 +1,6 @@
 h1 #{title}
 table.desc
-    each row in rows
-        tr.desc__row
-            each  cell in cells
-                td.desc__cell
+    each r in rows
+        tr.desc__row(data-row=r)
+            each c in cells
+                td.desc__cell(data-cell=c)

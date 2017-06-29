@@ -1,5 +1,9 @@
 import template from './desc.pug';
 
+let cells = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+let rows = [8, 7, 6, 5, 4, 3, 2, 1];
+
+
 export default class Desc {
 
     constructor(node) {
@@ -10,9 +14,9 @@ export default class Desc {
 
     render() {
         this.node.innerHTML = template({
-            title: 'Привет',
-            rows: [8, 7, 6, 5, 4, 3, 2, 1],
-            cells: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+            title: 'Шашки',
+            rows: rows,
+            cells: cells
         });
     }
 
