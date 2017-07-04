@@ -143,8 +143,47 @@ var _desc2 = _interopRequireDefault(_desc);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function request(method, url) {
+    var req = new XMLHttpRequest();
+
+    req.open(method, url);
+    req.send();
+
+    return new Promise(function (resolve, reject) {
+
+        req.addEventListener('readystatechange', function () {
+
+            if (req.readyState !== 4) {
+                return;
+            }
+
+            if (req.status === 200) {
+                resolve(JSON.parse(req.responseText));
+            } else {
+                reject(req);
+            }
+        });
+    });
+}
+
 window.addEventListener('DOMContentLoaded', function () {
     var desc = new _desc2.default(document.querySelector('.js-desc'));
+
+    request('GET', './public/data.json').then(function (data) {
+        return console.log(data);
+    }, function (req) {
+        return console.log(req.status);
+    });
+
+    fetch('./public/data.json', {
+        credentials: 'same-origin'
+    }).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        return console.log(data);
+    }, function (err) {
+        return console.error(err);
+    });
 });
 
 /***/ }),
@@ -160,7 +199,7 @@ function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var l
   if ('number' == typeof $$obj.length) {
       for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {
         var row = $$obj[pug_index0];
-pug_html = pug_html + ("\u003Ctr class=\"desc__row desc__row_\"\u003E+ " + (pug.escape(null == (pug_interp = row) ? "" : pug_interp)));
+pug_html = pug_html + "\u003Ctr class=\"desc__row\"\u003E";
 // iterate cells
 ;(function(){
   var $$obj = cells;
@@ -186,7 +225,7 @@ pug_html = pug_html + "\u003C\u002Ftr\u003E";
     for (var pug_index0 in $$obj) {
       $$l++;
       var row = $$obj[pug_index0];
-pug_html = pug_html + ("\u003Ctr class=\"desc__row desc__row_\"\u003E+ " + (pug.escape(null == (pug_interp = row) ? "" : pug_interp)));
+pug_html = pug_html + "\u003Ctr class=\"desc__row\"\u003E";
 // iterate cells
 ;(function(){
   var $$obj = cells;
