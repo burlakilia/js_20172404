@@ -1,4 +1,6 @@
 import Desc from '../desc/desc.js';
+import Game from '../game/game.js';
+
 
 function request(method, url) {
     let req = new XMLHttpRequest();
@@ -29,7 +31,11 @@ function request(method, url) {
 
 window.addEventListener('DOMContentLoaded', () => {
     let desc = new Desc(document.querySelector('.js-desc'));
-
+    let gameStartButton = document.querySelector('.new_game');
+  
+    gameStartButton.addEventListener('click', (e) =>{
+        let game = new Game();
+    })
 
     request('GET', './public/data.json')
         .then(data => console.log(data), req => console.log(req.status));
@@ -40,6 +46,5 @@ window.addEventListener('DOMContentLoaded', () => {
     })
         .then(response => response.json())
         .then(data => console.log(data), err => console.error(err));
-
 });
 
