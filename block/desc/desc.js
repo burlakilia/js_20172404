@@ -1,15 +1,18 @@
 import template from './desc.pug';
+import View from '../view';
 
 let cells = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 let rows = [8, 7, 6, 5, 4, 3, 2, 1];
 
 
-export default class Desc {
+export default class Desc extends View {
 
     constructor(node) {
+        super();
         this.node = node;
         this.render();
         this.node.addEventListener('click', event => this.onClick(event));
+        this.toggle(false);
     }
 
     render() {

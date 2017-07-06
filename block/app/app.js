@@ -1,6 +1,7 @@
 import Desc from '../desc/desc.js';
 import Game from '../game/game.js';
-
+import Router from '../../router';
+import Login from '../login/login';
 
 function request(method, url) {
     let req = new XMLHttpRequest();
@@ -30,21 +31,14 @@ function request(method, url) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+    let router = new Router(document.body);
     let desc = new Desc(document.querySelector('.js-desc'));
-    let gameStartButton = document.querySelector('.new_game');
-  
-    gameStartButton.addEventListener('click', (e) =>{
-        let game = new Game();
-    })
+    let login = new Login(document.querySelector('.js-login'));
+    let game = new Game();
 
-    request('GET', './public/data.json')
-        .then(data => console.log(data), req => console.log(req.status));
+    router.register('/game', desc);
+    router.register('/login', login);
 
-
-    fetch('./public/data.json', {
-        credentials: 'same-origin'
-    })
-        .then(response => response.json())
-        .then(data => console.log(data), err => console.error(err));
+    router.start();
 });
 
