@@ -13,7 +13,10 @@ export default class Game {
             figure.remove()
         });
 
-        this.spawnFigures();
+        this.spawnFigures()
+            .then(function () {
+                console.log('fasdafdsasdfafsd');
+            });
     }
 
     //#TODO make move for AI
@@ -26,10 +29,11 @@ export default class Game {
         return true
     }
 
-    spawnFigures() {
+    async spawnFigures() {
         let figure = new Figure();
-        let whiteStarting = this.model.getByColor('white');
-        let blackStarting = this.model.getByColor('black');
+
+        let whiteStarting = await this.model.getByColor('white');
+        let blackStarting = await this.model.getByColor('black');
 
         //spawn white
         for (let w of whiteStarting) {
